@@ -3,9 +3,7 @@ body {
   font-family: 'MUSEOSANSCYRL';
   font-weight: 100;
   font-size: 0.85vw;
-  color: #282828;
-  height: 10000px;
-  display: block; }
+  color: #282828; }
 
 p {
   margin: 0; }
