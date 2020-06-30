@@ -42,7 +42,7 @@
       position: absolute;
       top: 15px;
       right: 15px;
-      background: url("images/close.png") no-repeat center;
+      background: url("../images/close.png") no-repeat center;
       background-size: contain;
       opacity: 0.8;
       z-index: 2100;
