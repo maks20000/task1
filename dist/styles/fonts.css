@@ -1,0 +1,34 @@
+@font-face{
+    font-family: 'MUSEOSANSCYRL';
+    src: url('../fonts/MUSEOSANSCYRL.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}    
+
+@font-face{
+    font-family: 'MUSEOSANSCYRL';
+    src: url('../fonts/MUSEOSANSCYRL_0.OTF') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+} 
+
+@font-face{
+    font-family: 'MUSEOSANSCYRL';
+    src: url('../fonts/MUSEOSANSCYRL_1.OTF') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+} 
+
+@font-face{
+    font-family: 'MUSEOSANSCYRL';
+    src: url('../fonts/MUSEOSANSCYRL_2.OTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+} 
+
+@font-face{
+    font-family: 'MUSEOSANSCYRL';
+    src: url('../fonts/MUSEOSANSCYRL_3.OTF') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+} 

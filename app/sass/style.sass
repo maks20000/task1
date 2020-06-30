@@ -1,0 +1,600 @@
+body
+    margin: 0
+    font-family: 'MUSEOSANSCYRL'
+    font-weight: 100
+    font-size: 0.85vw
+    color: #282828
+    height: 10000px
+    display: block
+p 
+    margin: 0
+.wrapper 
+    width: 80vw
+    margin: 0 auto
+    &.min_width
+        width: 70vw
+header
+    font-family: 'MUSEOSANSCYRL'
+    font-weight: 100
+    color: #282828
+    background: url("/images/header-bg.jpg") no-repeat
+    background-size: cover
+    background-position: top center
+    font-size: 0.85vw
+    padding-bottom: 8vw
+    position: relative
+    overflow: hidden
+    .girl_bg
+        position: absolute
+        right: 0
+        bottom: 4vw
+        width: 100vw
+        height: 38.5vw
+        background: url("/images/girl-bg.png") no-repeat
+        background-size: contain
+        background-position: right bottom
+    .wave
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 8vw
+        background: url("/images/wave.png") no-repeat
+        background-size: cover
+        background-position: center bottom
+        display: flex
+        justify-content: center
+        padding-top: 0.6vw
+        box-sizing: border-box
+        .arrow_block
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            .pulsar_block
+                position: absolute
+                width: 8vw
+                height: 8vw
+                top: -3.5vw
+                & > div
+                    position: absolute
+                    box-sizing: border-box
+                    width: 12vw
+                    height: 12vw
+                    top: 50%
+                    left: 50%
+                    margin-left: -6vw
+                    margin-top: -6vw
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    &::before
+                        content: ""
+                        border-radius: 50%
+                        border: 1px solid #ffffff
+                        animation: pulse_2 3s infinite linear
+                .pulse_1
+                    &::before
+                        animation-delay: 0s
+                .pulse_2
+                    &::before
+                        animation-delay: 1s
+                .pulse_3
+                    &::before
+                        animation-delay: 2s
+            .circle_block
+                display: flex
+                flex-direction: column
+                align-items: center
+                z-index: 0
+                .h_line
+                    width: 0.2vw
+                    height: 1.05vw
+                    background: #EF8A91
+                .circle
+                    border-radius: 50%
+                    border: 3px solid #EF8A91
+                    width: 0.25vw
+                    height: 0.25vw
+            
+    .header_top_block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1vw 15px 10px
+
+    .top_block_item
+        &:not(:first-child)
+            margin-left: 3vw
+            
+        &.top_text
+            flex-grow: 2
+    .logo
+        width: 15vw
+        img 
+            width: 100%
+    .top_text
+        padding-bottom: 0.5vw
+        margin-left: 2.5vw !important
+    .small_text 
+        font-size: 0.73vw
+        font-weight: 100
+        width: 9vw
+    .hover_map
+        text-transform: uppercase
+        border-bottom: 1px dashed #FF6078
+        color: #FF6078
+        display: inline-block
+        font-size: 0.66vw
+        cursor: pointer
+        font-weight: 500
+        margin-top: 0.8vw
+        position: relative
+        .main_map
+            transition: opacity 1s
+            position: absolute
+            opacity: 0
+            width: 20vw
+            height: 15vw
+            right: 50%
+            margin-right: -10vw
+            z-index: 2
+        &:hover > .main_map
+            
+    .address, .contacts, .hover_map
+        letter-spacing: 0.03vw
+    .address
+        padding-left: 5vw
+        line-height: 1.05vw
+    .contacts 
+        padding-left: 3vw
+        &>div
+            &:first-child
+                margin-bottom: 0.8vw
+    .worked
+        font-size: 0.65vw
+        position: relative
+        padding-left: 0.8vw
+        font-weight: 300
+        &::before
+            content: ''
+            width: 6px
+            height: 6px
+            position: absolute
+            background: radial-gradient(circle, rgba(39,178,75,1) 95%, rgba(39,178,75,0) 100%)
+            border-radius: 50%
+            left: 0
+            top: 50%
+            margin-top: -3px
+    .phone
+        font-size: 1.25vw
+        margin: 3px 0 0
+    .icon
+        position: relative
+        &::before
+            position: absolute
+            width: 1.83vw
+            height: 1.83vw
+            border-radius: 50%
+            background-size: 50%
+            left: -2.5vw
+            top: 50%
+            margin-top: -0.915vw
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    .icon-btn 
+        position: relative
+        padding-left: 1.7vw
+        &::before
+            position: absolute
+            width: 1.83vw
+            height: 1.83vw
+            border-radius: 50%
+            background-size: 50%
+            left: -5px
+            top: 50%
+            margin-top: -0.915vw
+    .phone-icon 
+        &::before
+            content: ''
+            background: url('/images/phone-icon.png') no-repeat center
+            background-size: 50%
+            background-color: #ffffff
+    .clock-icon
+        &::before
+            content: ''
+            background: url('/images/clock-icon.png') no-repeat center
+            background-size: 50%
+            background-color: #ffffff
+    .calendar-icon
+        &::before
+            content: ''
+            background: url('/images/calendar-icon.png') no-repeat center
+            background-size: 50%
+            background-color: #ffffff
+            margin-top: -0.925vw
+    .map_icon
+        &::before
+            content: ''
+            background: url('/images/map-icon.png') no-repeat center
+            background-size: cover
+            margin-top: -2.25vw
+            width: 4.5vw
+            height: 4.5vw
+            left: -1vw
+    .burger
+        display: none
+        .mobile-nav
+            display: none
+    .main_menu
+        background-color: #ffffff
+        border-radius: 0.3vw
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 98%
+            height: 0.4vw
+            background: rgba(255, 255, 266, 0.7)
+            bottom: -0.4vw
+            left: 50%
+            margin-left: -49%
+        .main_menu_list
+            list-style: none
+            padding: 0 1vw
+            display: flex
+            justify-content: space-between
+            .main_menu_item 
+                font-weight: 300
+                font-size: 0.782vw
+                box-sizing: border-box
+                &.active
+                    text-shadow: 0 0 .70px #282828, 0 0 .70px #282828
+                a
+                    text-decoration: none
+                    color: inherit
+                    display: block
+                    padding: 1vw
+                &:hover
+                    text-shadow: 0 0 .70px #282828, 0 0 .70px #282828
+    .header_content
+        padding: 5vw 0 0
+        position: relative
+        overflow: hidden
+        padding-bottom: 2vw
+        .header_big_text
+            font-size: 2.5vw
+            font-weight: 300
+            width: 60%
+            .bold
+                display: block
+        .header_list
+            margin: 3vw 0
+        .client_map
+            position: absolute
+            bottom: -8.8vw
+            left: 50%
+            width: 40vw
+            margin-left: -12.8vw
+            img 
+                width: 100%
+.list
+    list-style: none
+    li 
+        position: relative
+        margin-bottom: 1vw
+        font-weight: 300
+        &::before
+            content: ""
+            position: absolute
+            width: 0.4vw
+            height: 0.4vw
+            left: -1.5vw
+            background-color: #EF9499
+            border-radius: 50%
+            top: 50%
+            margin-top: -0.2vw
+            z-index: 1
+
+        &::after
+            content: ""
+            position: absolute
+            width: 0.9vw
+            height: 0.9vw
+            left: -1.75vw
+            background-color: #ffffff
+            border-radius: 50%
+            top: 50%
+            margin-top: -0.45vw
+            box-shadow: 0px 0px 18px 0px rgba(239,148,153, 0.5)
+        
+.bold
+    font-weight: 600
+
+.btn
+    border-radius: 2vw
+    background-color: #ffffff
+    padding: 0.9vw 1vw
+    font-size: 0.782vw
+    font-weight: 500
+    text-align: center
+    cursor: pointer
+    display: inline-block
+    box-shadow: 0px 3px 0px 0px rgba(235, 234, 234, 1)
+    
+.btn-pink
+    box-shadow: 0px 0.3vw 0px 0px rgba(215,116,122, 1), 0px 0px 3px 1px #F6A9AC
+    background: linear-gradient(to top, rgba(238,133,140,1) 0%, rgba(250,188,188,1) 150%)
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 0.73vw
+    text-align: left
+    padding: 1.05vw 7vw 1.05vw 2vw
+    letter-spacing: 0.05vw
+    .btn-inner 
+        display: inline-block
+        text-align: center
+    &.branch-icon-btn
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 12vw
+            height: 100%
+            background: url("/images/Branch.png") no-repeat center
+            background-size: contain
+            right: -5.5vw
+            top: 0
+    &.plant-icon-btn
+        position: relative
+        box-shadow: 0px 4px 0px 0px #d7747a, 0px 26px 30px -13px #F6A9AC
+        &::before
+            content: ""
+            position: absolute
+            width: 9vw
+            height: 100%
+            background: url("/images/plant.png") no-repeat center
+            background-size: contain
+            right: -3vw
+            top: 0
+.tip_block
+    width: 1.7vw
+    height: 1.7vw
+    border-radius: 50%
+    position: absolute
+    top: 8.6vw
+    left: 15.4vw
+    z-index: 0
+    .tip_info
+        transition: opacity 1s
+        width: 7.5vw
+        min-height: 9vw
+        background: #ffffff
+        opacity: 0
+        position: absolute
+        left: 0.99vw
+        z-index: 0
+        bottom: 1vw
+        border-radius: 100% 100% 0 0/15% 15% 0% 0%
+        padding: 1.1vw 0.8vw
+        box-sizing: border-box
+        text-align: center
+        font-size: 0.625vw
+        letter-spacing: 0.06vw
+        box-shadow: 0px 0px 10px -15px #282828
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            top: -0.5vw
+            left: 0.5vw
+            background: #ffffff
+            opacity: 0.3
+            border-radius: 100% 100% 0 0/11% 18% 0% 0%
+            z-index: -1
+            animation: pulse 1s infinite ease-in-out
+    .tip
+        box-shadow: 2px 2px 0px 0px #d7747a, 0px 0px 3px 1px #F6A9AC
+        background: linear-gradient(to top, rgba(238,133,140,1) 0%, rgba(250,188,188,1) 150%)
+        width: 1.7vw
+        height: 1.7vw
+        border-radius: 50%
+        position: absolute
+        cursor: pointer
+        z-index: 1
+        &::before
+            content: ""
+            width: 100%
+            height: 70%
+            top: 50%
+            margin-top: -35%
+            left: 0.05vw
+            background: url("/images/tip.png") no-repeat center
+            background-size: contain
+            position: absolute
+    .tip_pulsar
+        position: absolute
+        width: 8vw
+        height: 8vw
+        top: 50%
+        left: 50%
+        margin-top: -4vw
+        margin-left: -4vw
+        display: flex
+        justify-content: center
+        align-items: center
+        &::before
+            content: ""
+            border: 2px solid #ffffff
+            border-radius: 50%
+            animation: pulse_3 1.5s infinite ease-out
+                
+.next-line
+    display: block
+
+.opacity_vis
+    opacity: 1 !important
+
+.hidden 
+    display: none
+
+.arrow_down
+    border-radius: 50%
+    border: 3px solid #EF8A91
+    width: 1.2vw
+    height: 1.2vw
+    background: url("/images/arrow-down.png") no-repeat center
+    background-size: 40%
+    cursor: pointer
+    z-index: 0
+
+.popup_container
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    display: none
+    .popup_bg
+        width: 100%
+        height: 100%
+        position: absolute
+        background: #000000
+        opacity: 0.3
+        z-index: 10000
+    .popup
+        transition: opacity .8s
+        opacity: 0
+        position: relative
+        z-index: 10001
+        background: url("/images/header-bg.jpg") no-repeat
+        background-size: cover
+        background-position: top center
+        padding: 3vw 4vw 4vw
+        width: 22.2vw
+        border-radius: 2.5vw
+        z-index: 200000
+        .popup_title
+            font-size: 1.5vw
+            text-align: center
+            margin-bottom: 1vw
+        .popup_text
+            text-align: center
+            font-size: 0.7vw
+            margin-bottom: 1.5vw
+        .popup_success_text
+            text-align: center
+            font-size: 1.3vw
+            font-weight: 300
+        .popup_success_icon
+            text-align: center
+            margin-bottom: 1vw
+        .popup_close
+            position: absolute
+            width: 0.5vw
+            height: 0.5vw
+            background: url("/images/close.png") no-repeat center
+            background-size: contain
+            opacity: 0.4
+            top: 2vw
+            right: 2vw
+            cursor: pointer
+        .popup_overlay
+            position: absolute
+            width: 15vw
+            height: 15vw
+            background: url(/images/overlay.png) no-repeat center
+            background-size: contain
+            top: 8.5vw
+            left: -6.5vw
+            z-index: -1
+            &.lepestok
+                background: url(/images/lepestok.png) no-repeat center
+                background-size: contain
+                left: 24vw
+                top: 4.8vw
+                width: 5vw
+        &.success
+            display: none
+            width: 21vw
+            padding: 4vw 4vw
+            overflow: hidden
+            background: url("/images/popup-bg.png") no-repeat
+            background-size: cover
+            background-position: center bottom
+.main_form
+    padding: 0 0.9vw
+    input, select
+        display: block
+        width: 100%
+        box-sizing: border-box
+        border-radius: 2.5vw
+        border: 0
+        padding: 1.2vw 1.5vw
+        margin-bottom: 0.8vw
+        color: #908F8F
+        letter-spacing: 0.02vw
+    input
+        &::-webkit-input-placeholder
+            color: #908F8F
+    select 
+        appearance: none
+        position: relative
+        background: url("/images/arrow-down-gr.png") no-repeat
+        background-color: #ffffff
+        background-position: right 1.2vw center
+        background-size: 1vw
+    button
+        border: 0
+        width: 100%
+        padding: 1.2vw 3vw
+        box-sizing: border-box
+        letter-spacing: 0.09vw
+.parallax_block
+    position: absolute
+    width: 18vw
+    height: 18vw
+    &.block_1
+        background: url("/images/img_2.png") no-repeat center
+        background-size: contain
+        top: 15vw
+        left: 6vw
+    &.block_2
+        background: url("/images/img_3.png") no-repeat center
+        background-size: contain
+        top: 6vw
+        right: 0
+        width: 5vw
+        height: 10vw
+@keyframes pulse
+    0%
+        top: 0
+        left: 0
+        opacity: 0.6
+    100%
+        top: -0.7vw
+        left: 0.7vw
+        opacity: 0.1
+
+@keyframes pulse_2
+    0%
+        width: 3vw
+        height: 3vw
+        opacity: 1
+    100%
+        width: 8vw
+        height: 8vw
+        opacity: 0.2
+
+@keyframes pulse_3
+    0%
+        width: 1vw
+        height: 1vw
+        opacity: 0.7
+    100%
+        width: 3vw
+        height: 3vw
+        opacity: 0.0

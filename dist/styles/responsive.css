@@ -1,0 +1,224 @@
+@media screen and (max-width: 992px) {
+  header .burger {
+    display: block;
+    position: relative; }
+  header .mobile-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    header .mobile-nav .nav_bg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      opacity: 0.8;
+      z-index: 2000; }
+    header .mobile-nav .nav_close {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: url("/images/close.png") no-repeat center;
+      background-size: contain;
+      opacity: 0.8;
+      z-index: 2100;
+      cursor: pointer; }
+    header .mobile-nav .main_menu_list {
+      z-index: 2001;
+      position: relative;
+      list-style: none;
+      background: white;
+      padding: 30px;
+      -webkit-box-shadow: 0 0 24.7px -8px #282828;
+              box-shadow: 0 0 24.7px -8px #282828; }
+      header .mobile-nav .main_menu_list li a {
+        padding: 10px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        color: inherit; }
+  header .top_block_item .btn {
+    display: none; }
+  header .main_menu {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 98vw; }
+  header .header_top_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    header .header_top_block .logo {
+      width: 211px; }
+    header .header_top_block .phone {
+      font-size: 4vw; }
+    header .header_top_block .time-work {
+      font-size: 14px; }
+    header .header_top_block .top_text {
+      -webkit-box-ordinal-group: 5;
+      -webkit-order: 4;
+          -ms-flex-order: 4;
+              order: 4;
+      width: 100%;
+      margin: 0; }
+      header .header_top_block .top_text .small_text {
+        font-size: 11px;
+        width: 100%;
+        text-align: center; }
+    header .header_top_block .worked {
+      font-size: 10px;
+      padding-left: 10px; }
+    header .header_top_block .address {
+      display: none; }
+    header .header_top_block .burger {
+      position: absolute;
+      right: 10px;
+      top: 38px; }
+  header .icon::before {
+    width: 15px;
+    height: 15px;
+    left: -20px;
+    margin-top: -7.5px; }
+  header .girl_bg {
+    display: none; }
+  header .header_content {
+    padding: 25px 0; }
+    header .header_content .header_big_text {
+      font-size: 18px;
+      width: 100%; }
+    header .header_content .header_list {
+      font-size: 14px; }
+      header .header_content .header_list .list {
+        padding-left: 15px; }
+        header .header_content .header_list .list li::before {
+          width: 5px;
+          height: 5px;
+          left: -12px;
+          margin-top: -2.5px;
+          z-index: 0; }
+        header .header_content .header_list .list li::after {
+          width: 10px;
+          height: 10px;
+          left: -15px;
+          margin-top: -5px;
+          z-index: -1; }
+    header .header_content .client_map {
+      display: none; }
+  .btn {
+    font-size: 12px !important; }
+    .btn.btn-pink {
+      padding: 10px 70px 10px 25px;
+      -webkit-border-radius: 30px;
+              border-radius: 30px; }
+      .btn.btn-pink::before {
+        width: 110px;
+        right: -51px;
+        top: 0; }
+      .btn.btn-pink.plant-icon-btn {
+        padding: 17px 70px 17px 25px;
+        -webkit-box-shadow: 0px 3px 0px 0px #d7747a, 0px 26px 30px -13px #F6A9AC;
+                box-shadow: 0px 3px 0px 0px #d7747a, 0px 26px 30px -13px #F6A9AC; }
+  .popup_container .popup {
+    width: 20rem;
+    padding: 35px; }
+    .popup_container .popup .popup_text {
+      font-size: 12px; }
+    .popup_container .popup .popup_title {
+      font-size: 16px; }
+    .popup_container .popup .popup_close {
+      width: 15px;
+      height: 15px; }
+    .popup_container .popup .popup_success_text {
+      font-size: 16px; }
+    .popup_container .popup .popup_overlay {
+      display: none; }
+    .popup_container .popup.success {
+      width: 15rem;
+      background-size: 109%;
+      background-position: center 0px; }
+  .main_form input, .main_form select {
+    padding: 18px 25px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px; }
+  .parallax_block.block_1 {
+    top: 145px;
+    height: 115px;
+    width: 115px; }
+  .parallax_block.block_2 {
+    top: 100px;
+    width: 50px;
+    height: 90px; } }
+
+@media screen and (max-width: 500px) {
+  .wrapper.min_width {
+    width: 100%;
+    padding: 30px 15px; }
+  header .header_top_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
+    header .header_top_block .contacts {
+      margin-top: 10px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
+      header .header_top_block .contacts .phone {
+        font-size: 18px; }
+      header .header_top_block .contacts .time-work {
+        font-size: 16px; }
+  header .header_content .header_list {
+    margin: 20px 0 0; }
+  header .header_content .header_btn {
+    text-align: center; }
+    header .header_content .header_btn .btn {
+      margin-left: -7vw;
+      margin-top: 20px; }
+  .btn.btn-pink.btn-pink.plant-icon-btn {
+    padding: 17px 45px 17px 25px; }
+  .parallax_block.block_1 {
+    top: 210px;
+    left: -25px; }
+  .parallax_block.block_2 {
+    top: 180px; }
+  .popup_container .popup {
+    width: 15rem;
+    padding: 25px; }
+    .popup_container .popup.success {
+      background-size: 120%; } }
+
+@media screen and (max-width: 320px) {
+  header .header_content .header_list {
+    margin: 20px 0 0; } }
